@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, #23ac51 0%, #23ac93 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 35px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.input-div {
+    margin-top: 15px;
+    position: relative;
+}
+
+.input-div > i {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 45%;
+    left: 7px;
+}
+
+.input-div > input {
+    width: 100%;
+    height: 40px;
+    text-indent: 30px;
+}
+
+.input-div > input {
+   outline: none;
+}
+
+.icon-input {
+    border-radius: 5px;
+    border-color: teal;
+    border-top: teal;
+    border-left: teal;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+i {
+    color: rgb(93, 99, 99);
+}
+
+#login {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    background-image: linear-gradient(to right, #25b354 0%, #23b197 100%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.forgot {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-bottom: 40px;
+}
+
+label {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#cbox1 {
+    margin-right: 2px;
+    margin-left: -5px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(108, 255, 248);
+}
+
+@media screen and (min-width: 270px) {
+    .form-login {
+        width: 250px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .forgot {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .form-login {
+        width: 260px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .forgot {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .form-login {
+        width: 290px;
+    }
+
+    .forgot {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .form-login {
+        width: 350px;
+    }
+
+    .forgot {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .form-login {
+        width: 450px
+    }
+
+    .forgot {
+        font-size: 16px;
+    }
+}
