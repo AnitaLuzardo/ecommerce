@@ -15,15 +15,22 @@ body {
     align-items: center;
 }
 
+form{
+    width: 30%;
+}
+
 h1 {
-    padding-bottom: 35px;
+    padding-bottom: 15px;
     color: white;
     text-align: center;
     font-size: 50px;
 }
 
 .input-div {
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.icon {
     position: relative;
 }
 
@@ -34,17 +41,27 @@ h1 {
     left: 7px;
 }
 
-.input-div > input {
-    width: 100%;
-    height: 40px;
+.icon > .icon-input{
     text-indent: 30px;
 }
 
 .input-div > input {
-   outline: none;
+    width: 100%;
+    height: 40px;
 }
 
-.icon-input {
+.sign-up input{
+    padding-left: 5px;
+    width: 98%;
+
+}
+
+.input-div > input {
+   outline: none;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.input-div > input {
     border-radius: 5px;
     border-color: teal;
     border-top: teal;
@@ -53,7 +70,7 @@ h1 {
 }
 
 i {
-    color: rgb(93, 99, 99);
+    color: rgb(113, 122, 122);
 }
 
 #login {
@@ -67,6 +84,21 @@ i {
     background-image: linear-gradient(to right, #25b354 0%, #23b197 100%);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.26);
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sing-up {
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border-style: none;
+    background-image: linear-gradient(to right, #25b354 0%, #23b197 100%);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.301), 0 6px 20px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
 }
 
 button:active {
@@ -81,6 +113,7 @@ button:active {
     padding-top: 40px;
     padding-left: 5px;
     padding-bottom: 40px;
+    font-size: 14px;
 }
 
 label {
@@ -103,23 +136,19 @@ hr {
     background-color: rgb(108, 255, 248);
 }
 
-@media screen and (min-width: 270px) {
-    .form-login {
-        width: 250px;
-    }
-
-    h1{
-        font-size: 40px;
+@media screen and (max-width:700px){
+    form{
+        width: 290px;
     }
 
     .forgot {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
-@media screen and (min-width: 280px) {
-    .form-login {
-        width: 260px;
+@media screen and (max-width:800px){
+    form{
+        width: 290px;
     }
 
     h1{
@@ -131,32 +160,36 @@ hr {
     }
 }
 
-@media screen and (min-width: 320px) {
-    .form-login {
+@media screen and (max-width:900px){
+    form{
         width: 290px;
     }
 
     .forgot {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
-@media screen and (min-width: 400px) {
-    .form-login {
-        width: 350px;
+@media screen and (max-width:1000px){
+    form{
+        width: 290px;
     }
 
     .forgot {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
-@media screen and (min-width: 700px) {
-    .form-login {
-        width: 450px
+@media screen and (max-width:400px){
+    form{
+        width: 250px;
+    }
+
+    h1{
+        font-size: 35px;
     }
 
     .forgot {
-        font-size: 16px;
+        font-size: 11px;
     }
 }
