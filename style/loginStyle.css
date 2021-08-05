@@ -1,15 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to right, #23ac51 0%, #23ac93 100%);
+    background-image: var(--bg-image-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +66,7 @@ i {
 
 #login {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 5px;
     font-size: 16px;
     color: white;

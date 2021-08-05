@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;   
+}
+
+:root {
+    --bg-image-primary: linear-gradient(to right, #23ac51 0%, #23ac93 100%);
+}
