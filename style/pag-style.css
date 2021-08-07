@@ -1,10 +1,14 @@
+header{
+    background-color:rgb(222, 247, 243);
+}
+
 .header-info {
     display: flex;
     justify-content: space-between;
 }
 
 .header-info {
-    background-image: linear-gradient(to right, #5ebe7e 0%, #5ebdab 100%);
+    background-image: var(--bg-image-primaryII);
 }
 
 .info {
@@ -36,16 +40,114 @@
     align-items: center;
 }
 
-.header-search{
-    margin: 0px;
-    background-color:rgb(222, 247, 243);
-}
 
 .search-inf{
-    margin: 50px;
+    margin: 20px;
 }
 
 .logo > h1 {
     color: #23ac51;
     font-size: 40px;
+}
+
+.input-search{
+    margin: 10px;
+}
+
+.search {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.search {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    text-indent: 15px;
+}
+
+.menu-nav{
+    text-align: center;
+}
+
+.menu-nav > ul > li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu-nav > ul > li > a{
+    text-decoration: none;
+    color: black    ;
+}
+
+.menu-nav > ul > li > a:hover{
+    color: #23ac51;
+}
+
+@media screen and (max-width: 1210px){
+    
+    /* .search-inf {
+        margin: 40px;
+    } */
+    
+    .header-search{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .search{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 965px){
+
+    .header-search{
+        margin: 10px;
+    }
+
+    .logo > h1 {
+        font-size: 35px;
+    }
+}
+
+ @media screen and (max-width: 750px){
+    .input-search{
+        position: relative;
+    } 
+
+    .button-search{
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: -45px;
+    } 
+}
+
+@media screen and (max-width: 700px){
+    .header-search{
+        flex-direction: column;
+    }
+
+   
+
+    .info-money-world{
+        display: none;
+    }
+
+    .header-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu{
+        margin-top: 20px;
+    }
+
+    .search {
+        width: 250px;
+        height: 30px;
+    }
 }
