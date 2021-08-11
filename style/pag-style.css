@@ -148,7 +148,6 @@ header{
         left: 0;
         width: 40%;
         height: 100%;
-        overflow-y: auto;
     }
 
     .menu-nav-resp {
@@ -168,7 +167,6 @@ header{
     .menu-nav-resp >.menu-resp > li > a {
         text-decoration: none;
         color: white;
-
     }
 
     .menu-nav-resp > .menu-resp > li > a:hover {

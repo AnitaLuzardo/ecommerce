@@ -16,18 +16,6 @@ body {
     --bg-image-primaryII: linear-gradient(to right, #5ebe7e 0%, #5ebdab 100%);
 }
 
-/* .input-search{
-    position: relative;
-} */
-
-/* .button-search{
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: -45px;
-} */
-
-
 .button-search {
     font-size: 15px;
     width: 40px;
@@ -49,7 +37,7 @@ body {
     transform: translateY(4px);
 }
 
-.header-icon > button{
+.header-icon > button {
     width: 40px;
     height: 40px;
     font-size: 20px;
