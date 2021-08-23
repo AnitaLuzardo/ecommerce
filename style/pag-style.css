@@ -107,62 +107,70 @@ header{
 }
 
 .slider-container {
-    width: 100%;
     display: flex;
-}
-
-.contenido-slide{
-    width: 100%;
+    width: 400%;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.contenido-slide:nth-child(1) {
-    background-image: url(../style/imag/shopping1.jpg);
-}
-
-.contenido-slide:nth-child(2) {
-    background-image: url(../style/imag/shopping2.jpg);
-}
-
-.contenido-slide:nth-child(3) {
-    background-image: url(../style/imag/shopping3.jpg);
-}
-
-.contenido-slide:nth-child(4) {
-    background-image: url(../style/imag/shopping1.jpg);
+    margin-left: -100%;
 }
 
 .contenido-slide {
-    background-position: center center;
+    position: relative;
 }
 
 .contenido-slide {
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
 }
 
-.contenido-slide > div {
+.slider-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 120px;
+}
+
+.contenido {
     background-color: rgba(128, 128, 128, 0.329);
     border-radius: 8px;
-    padding: 30px;
+    padding: 10px;
 }
 
-.contenido-slide > div > h1 {
+.contenido > h1{
     font-size: 50px;
     color: #23ac51;
     letter-spacing: 15px;
 }
 
-.contenido-slide > div > p {
+.contenido > p {
     font-size: 20px;
     line-height: 1.5;
+    color: #ffffff;
 }
 
-.contenido-slide > div > button {
+.container {
+    position: relative;
+}
+
+.btn-slider {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ffffff71;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.contenido > button {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 20px;
@@ -180,6 +188,27 @@ header{
     transform: translateY(4px);
 }
 
+.btnright {
+    right: 10px;
+}
+
+.btnleft {
+    left: 10px;
+}
+
+.btn-slider {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: rgba(119, 136, 153, 0.349);
+}
+
+.btn-slider:hover {
+    background:rgba(163, 238, 126, 0.377);
+}
+
+
+
 @media screen and (max-width: 1210px) {    
     .header-search{
         display: flex;
@@ -196,7 +225,6 @@ header{
         font-size: 35px;
     }
 }
-
 
 @media screen and (max-width: 750px) {
     .header-search{
@@ -287,53 +315,116 @@ header{
         height: 30px;
     } 
 
-    .contenido-slide{
-        width: 100%;
-        height: 300px;
+    .contenido {
+        left: 90px;
     }
-
-    .contenido-slide > div > h1 {
-        font-size: 30px;
-        color: #23ac51;
+    
+    .contenido > h1{
+        font-size: 35px;
         letter-spacing: 10px;
     }
     
-    .contenido-slide > div > p {
+    .contenido > p {
         font-size: 15px;
+        letter-spacing: 2px;
         line-height: 1.5;
+        color: #ffffff;
     }
     
-    .contenido-slide > div > button {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        font-size: 15px;
-        width: 110px;
-        height: 50px;
-       
-    }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px) {
+    .contenido {
+        top: 45%;
+    }
+
+    .contenido {
+        left: 100px;
+    }
     
-    .contenido-slide > div > h1 {
-        font-size: 20px;
-        color: #23ac51;
+    .contenido > h1{
+        font-size: 30px;
         letter-spacing: 5px;
     }
     
-    .contenido-slide > div > p {
+    .contenido > p {
         font-size: 12px;
+        letter-spacing: 1px;
         line-height: 1.5;
+        color: #ffffff;
     }
 
-    .contenido-slide > div {
-        padding: 10px;
+    .btn-slider {
+        top: 45%;   
+    }
+
+    .contenido > button { 
+        font-size: 12px;
+        width: 90px;
+        height: 30px;
+    }
+} 
+
+@media screen and (max-width: 600px){
+    .btn-slider {
+        top: 40%;    
+    }
+
+    .btn-slider {
+        font-size: 12px;
+    }
+
+    .contenido {
+        top: 40%;
+    }
+
+    .contenido {
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-nav-resp >.menu-resp > li > a {
+        font-size: 15px;
+    }
+
+    .btn-slider {
+        top: 35%; 
+        width: 20px;
+        height: 20px;   
+    }
+
+    .btn-slider {
+        font-size: 12px;
+    }
+
+    .contenido {
+        top: 35%;
+    }
+
+    .contenido {
+        left: 55px;
+        padding: 5px;
+    }
+
+    .contenido > h1{
+        font-size: 20px;
+        letter-spacing: 2px;
     }
     
-    .contenido-slide > div > button {
-        font-size: 12px;
-        width: 80px;
-        height: 30px;
+    .contenido > p {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .btn-slider {
+        top: 29%;  
+    }
+
+    .contenido {
+        top: 29%;
     }
 }
 
@@ -371,25 +462,75 @@ header{
         font-size: 15px;
     }
 
-    .contenido-slide{
-        width: 100%;
-        height: 300px;
+    .btn-slider {
+        top: 25%;  
+    }
+
+    .btn-slider {
+        font-size: 12px;
+    }
+
+    .contenido {
+        top: 25%;
+    }
+
+    .contenido {
+        left: 50px;
+        padding: 5px;
+    }
+
+    .contenido > h1{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    
+    .contenido > p {
+        font-size: 9px;
+        letter-spacing: 0.1px;
+    }
+
+    .contenido > button { 
+        font-size: 10px;
+        width: 60px;
+        height: 20px;
     }
 }
 
-@media screen and (max-width: 300px){
-    .contenido-slide > div > h1 {
-        font-size: 17px;
-        color: #23ac51;
-        letter-spacing: 2px;
-    }
-    
-    .contenido-slide > div > p {
-        font-size: 12px;
-        line-height: 1.5;
+@media screen and (max-width: 350px){
+    .bar-menu > i {
+        color: #23ac51; 
     }
 
-    .contenido-slide > div {
-        margin: 5px;
+    .btn-slider {
+        top: 20%;  
     }
+
+    .btn-slider {
+        font-size: 10px;
+    }
+
+    .contenido {
+        top: 20%;
+    }
+
+    .contenido {
+        left: 45px;
+        padding: 2px;
+    }
+
+    .contenido > h1{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    
+    .contenido > p {
+        font-size: 7px;
+        letter-spacing: 0.1px;
+    }
+
+    .contenido > button { 
+        font-size: 8px;
+        width: 45px;
+        height: 20px;
+    }    
 }
