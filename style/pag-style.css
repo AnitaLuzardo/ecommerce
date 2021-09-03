@@ -242,7 +242,7 @@ header{
 }
 
 .products-content {
-    margin: auto;
+    margin: 20px auto;
 }
 
 .img-content > img {
@@ -286,6 +286,18 @@ header{
 
     .contenido {
         left: 110px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .trending > h1 {
+        font-size: 27px;
+    }
+
+    .show-products {
+        font-size: 12px;
+        width: 100px;
+        height: 35px;
     }
 }
 
@@ -396,6 +408,14 @@ header{
         letter-spacing: 2px;
         line-height: 1.5;
         color: #ffffff;
+    }
+
+    .trending {
+        margin: 40px;
+    }
+
+    .products-content {
+        margin: 15px auto;
     }
 }
 
