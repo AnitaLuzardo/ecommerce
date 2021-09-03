@@ -56,3 +56,40 @@ body {
 .header-icon > button:active {
     transform: translateY(4px);
 }
+
+.show-products {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-image: var(--bg-image-primaryII);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.trending > button:active {
+    transform: translateY(4px);
+}
+
+.add-cart {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-image: var(--bg-image-primaryII);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product > button:active {
+    transform: translateY(4px);
+}
