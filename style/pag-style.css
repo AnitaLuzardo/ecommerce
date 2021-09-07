@@ -224,7 +224,7 @@ header{
 }
 
 .trending > h1 {
-    font-size: 40px;
+    font-size: 30px;
     color: #23ac51;
 }
 
@@ -265,12 +265,12 @@ header{
 }
 
 @media screen and (max-width: 1310px) {    
-    .header-search{
+    .header-search {
         display: flex;
         flex-wrap: wrap;
     }
     
-    .search{
+    .search {
         width: 250px;
     }
 
@@ -278,6 +278,15 @@ header{
         top: 60%;
     }
 }
+
+@media screen and (max-width: 1240px) {
+    .trending-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+} 
 
 @media screen and (max-width: 965px) {
     .logo > h1 {
@@ -379,7 +388,7 @@ header{
         right: 10px;
     }
 
-    .bar-menu > i{
+    .bar-menu > i {
         color: #ffffff;
         font-size: 25px;
     }
@@ -398,7 +407,7 @@ header{
         left: 90px;
     }
     
-    .contenido > h1{
+    .contenido > h1 {
         font-size: 35px;
         letter-spacing: 10px;
     }
@@ -417,6 +426,14 @@ header{
     .products-content {
         margin: 15px auto;
     }
+
+    .products-content {      
+        width: 200px;
+    }
+
+    .img-content > img {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -424,7 +441,7 @@ header{
         left: 100px;
     }
     
-    .contenido > h1{
+    .contenido > h1 {
         font-size: 30px;
         letter-spacing: 5px;
     }
@@ -443,6 +460,45 @@ header{
     }
 } 
 
+@media screen and (max-width: 610px) {
+    .trending > h1 {
+        font-size: 20px;
+    }
+
+    .show-products {
+        font-size: 10px;
+        width: 85px;
+        height: 30px;
+    }
+
+    .products-content {
+        margin: 15px auto;
+    }
+
+    .products-content {      
+        width: 150px;
+        padding: 10px;
+    }
+
+    .img-content > img {
+        width: 150px;
+    }
+
+    .add-cart {
+        font-size: 11px;
+        width: 130px;
+        height: 20px;
+    }
+
+    .product > h3 {
+        font-size: 12px;
+    }
+
+    .product-info {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 600px){
     .btn-slider {
         width: 20px;
@@ -452,6 +508,10 @@ header{
 
     .contenido {
         left: 65px;
+    }
+
+    .trending {
+        margin: 20px;
     }
 }
 
@@ -473,6 +533,57 @@ header{
     .contenido > p {
         font-size: 10px;
         letter-spacing: 0.5px;
+    }
+
+
+    .container-products {
+        margin: 20px;
+    }
+
+    .trending > h1 {
+        font-size: 15px;
+    }
+
+    .show-products {
+        font-size: 10px;
+        width: 80px;
+        height: 25px;
+    }
+
+
+    .products-content {
+        margin: 15px auto;
+    }
+
+    .add-cart {
+        font-size: 10px;
+        width: 110px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .products-content {      
+        width: 100%;
+    }
+
+    .img-content > img {
+        width: 100%;
+    }
+
+    .trending-products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .trending > h1 {
+        font-size: 15px;
+    }
+
+    .show-products {
+        font-size: 8px;
+        width: 62px;
+        height: 20px;
     }
 }
 
@@ -504,26 +615,18 @@ header{
         height: 30px;
     }
 
-    .header-icon > button{
+    .header-icon > button {
         width: 30px;
         height: 30px;
         font-size: 15px;
     }
-
-    /* .btn-slider {
-        top: 25%;  
-    }
-
-    .contenido {
-        top: 25%;
-    } */
 
     .contenido {
         left: 50px;
         padding: 5px;
     }
 
-    .contenido > h1{
+    .contenido > h1 {
         font-size: 17px;
         letter-spacing: 1px;
     }
@@ -537,6 +640,20 @@ header{
         font-size: 10px;
         width: 60px;
         height: 20px;
+    }
+
+    .trending {
+        margin: 0px;
+    }
+
+    .trending > h1 {
+        font-size: 12px;
+    }
+
+    .show-products {
+        font-size: 6px;
+        width: 50px;
+        height: 15px;
     }
 }
 
@@ -554,7 +671,7 @@ header{
         padding: 2px;
     }
 
-    .contenido > h1{
+    .contenido > h1 {
         font-size: 12px;
         letter-spacing: 0.5px;
     }
@@ -569,4 +686,8 @@ header{
         width: 45px;
         height: 20px;
     }    
+
+    .trending > h1 {
+        font-size: 11px;
+    }
 }
