@@ -264,6 +264,58 @@ header{
     color: rgb(238, 238, 76);
 }
 
+.content-footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, #DFFFCD 0%, #a7f8d0 48%, #9df1d8 100%);
+}
+
+.service-footer {
+    margin: 20px auto;
+    text-align: center;
+    color: rgb(78, 77, 77);
+    line-height: 1.5;
+}
+
+.service {
+    font-size: 40px;
+}
+
+.container-social {
+    margin: 50px
+}
+
+.content-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-company > h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #23ac51;
+}
+
+.social-company > p {
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-image: var(--bg-image-primaryII);
+    font-size: 12px;
+    color: seashell;
+}
+
+.payment {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 1310px) {    
     .header-search {
         display: flex;
@@ -285,7 +337,6 @@ header{
         grid-template-columns: repeat(2, 1fr);
         
     }
-
 } 
 
 @media screen and (max-width: 965px) {
@@ -307,6 +358,18 @@ header{
         font-size: 12px;
         width: 100px;
         height: 35px;
+    }
+
+    .service > h1 {
+        font-size: 30px;
+    }
+
+    .service-content > h3 {
+        font-size: 15px;
+    }
+
+    .service-content > p{
+        font-size: 10px;
     }
 }
 
@@ -459,6 +522,23 @@ header{
         height: 30px;
     }
 } 
+
+@media screen and (max-width: 650px) {
+    .container-social {
+        margin: 10px;
+    }
+
+    .content-social {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .social-company > h1 {
+        font-size: 25px;
+        padding: 15px;
+    }
+}
 
 @media screen and (max-width: 610px) {
     .trending > h1 {
@@ -689,5 +769,13 @@ header{
 
     .trending > h1 {
         font-size: 11px;
+    }
+
+    .social-company > h1 {
+        font-size: 20px;
+    }
+    
+    .social-company > p {
+        font-size: 9px;
     }
 }
