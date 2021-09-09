@@ -206,8 +206,8 @@ header{
     color: #fdfdfd;
 }
 
-.btn-slider:hover {
-    background-color: rgba(0, 255, 13, 0.418);
+.btn-slider > i:hover {
+    color: rgb(36, 194, 181);
 }
 
 .container-products {
@@ -264,10 +264,13 @@ header{
     color: rgb(238, 238, 76);
 }
 
+.container-footer {
+    background-image: linear-gradient(-225deg, #DFFFCD 0%, #a7f8d0 48%, #9df1d8 100%);
+}
+
 .content-footer {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(-225deg, #DFFFCD 0%, #a7f8d0 48%, #9df1d8 100%);
 }
 
 .service-footer {
@@ -279,6 +282,46 @@ header{
 
 .service {
     font-size: 40px;
+}
+
+.container-footer {
+    position: relative;
+}
+
+.slider-btn {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.slider-btn {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(128, 128, 128, 0.349) ;
+    font-size: 14px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.slider-btn > i {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.slider-btn {
+    display: none;
+    cursor: pointer;
 }
 
 .container-social {
@@ -530,13 +573,16 @@ header{
 
     .content-social {
         flex-direction: column;
-        align-items: center;
-        margin: 10px;
+        text-align: center;
     }
 
     .social-company > h1 {
         font-size: 25px;
         padding: 15px;
+    }
+
+    .social-btn {
+        margin: 20px;
     }
 }
 
@@ -592,6 +638,31 @@ header{
 
     .trending {
         margin: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container-footer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .content-footer {
+        width: 300%;
+    }
+
+    .service-footer {
+        display: block;
+        width: 100%;
+    } 
+
+    .slider-btn > i:hover {
+        color: rgb(36, 194, 181);
+    }
+
+    .slider-btn {
+        display: block;
+
     }
 }
 
