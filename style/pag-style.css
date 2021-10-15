@@ -277,6 +277,9 @@ header{
     align-content: center; 
 }
 
+.container-respFooter {
+    display: none;
+}
 
 .service-footer {
     margin: 20px auto;
@@ -287,17 +290,6 @@ header{
 
 .service {
     font-size: 40px;
-}
-
-.slider-inf {
-    display: flex;
-    justify-content: center;
-    display: none;
-}
-
-.slider-inf > a {
-    color: rgb(78, 77, 77);
-    font-size: 20px;
 }
 
 .container-social {
@@ -618,72 +610,40 @@ header{
 }
 
 @media screen and (max-width: 550px) {
+    .container-footer {
+        display: none;
+    }
 
-    .slider-inf {
+    .container-respFooter {
         display: block;
-    }
-
-    .slider-inf{
-        display: flex;
-        justify-content: center;
-    }
-
-    .container-footer .service-footer {
-        order: 1;
-    }
-
-    
-      
-    /* .slider-inf {
-        display: flex;
-        justify-content: center;   
-    }
-    
-
-    .content-footer {
         width: 100%;
+        background-image: linear-gradient(-225deg, #DFFFCD 0%, #a7f8d0 48%, #9df1d8 100%);
         overflow: hidden;
     }
 
-    #slide-inf {
-        width: 300%;
-        
-    }
-
-    .service-footer {
-        order: 1;
-    }
-
-    input[type="radio"] {
-        order: 2;
-    } */
-
-    /* .service-footer {
+    .service-respFooter {
         width: 100%;
-        transition: all 1s;
-    } */
-    
-    /* .menu-Slide {
-        display: block;
+        height: 200px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        flex-shrink: 0;
     }
 
-    .menu-Slide > .slide-info {
-        margin: 10px;
+    .content-respFooter {
+        width: 100%;
+        display: flex;
     }
 
-    #slide1:checked ~ .service-footer {
-        margin-left: 0;
+    .service-respContent {
+        color: rgb(78, 77, 77);
+        text-align: center;
     }
 
-    #slide2:checked ~ .service-footer {
-        margin-left: -100%;
+    .service-respContent > h1 > i {
+        font-size: 50px;
     }
 
-    #slide3:checked ~ .service-footer {
-        margin-left: -200%;
-    } */
 }
 
 @media screen and (max-width: 500px) {
@@ -868,5 +828,17 @@ header{
     
     .social-company > p {
         font-size: 9px;
+    }
+
+    .service-respFooter { 
+        height: 130px;
+    }
+
+    .service-respContent > h1 > i {
+        font-size: 30px;
+    }
+
+    .service-respContent {
+        font-size: 10px;
     }
 }

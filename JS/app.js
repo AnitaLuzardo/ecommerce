@@ -48,3 +48,30 @@ btnLeft.addEventListener('click', function (){
 setInterval(() => {
   next();
 }, 6000);
+
+let sliderResp = document.querySelector('.content-respFooter');
+let sliderIndividual = document.querySelectorAll('.service-respFooter');
+let contador = 1;
+let width = sliderIndividual[0].clientWidth;
+let intervalo = 3000;
+
+window.addEventListener("resize", function() {
+  width = sliderIndividual[0].clientWidth;
+})
+
+setInterval(function(){
+  slide();
+}, intervalo)
+
+function slide(){
+  sliderResp.style.transform = "translate("+(-width*contador)+"px)";
+  sliderResp.style.transition = "all 1s";
+  contador++;
+  if(contador == sliderIndividual.length){
+    setTimeout(function(){
+      sliderResp.style.transform = "translate(0px)";
+      sliderResp.style.transition = "all 0s";
+      contador= 1;
+    }, 1500)
+  }
+}
