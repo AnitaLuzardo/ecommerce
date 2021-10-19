@@ -49,29 +49,50 @@ setInterval(() => {
   next();
 }, 6000);
 
-let sliderResp = document.querySelector('.content-respFooter');
-let sliderIndividual = document.querySelectorAll('.service-respFooter');
-let contador = 1;
-let width = sliderIndividual[0].clientWidth;
-let intervalo = 3000;
+const contentSlider = document.querySelector('#content-respF');
+let sliderFooter = document.querySelectorAll('.service-respFooter');
+let sliderFooterLast =  sliderFooter[sliderFooter.length -1];
 
-window.addEventListener("resize", function() {
-  width = sliderIndividual[0].clientWidth;
+let btnLeftResp = document.querySelector('#btnleftResp');
+let btnRigthResp = document.querySelector('#btnrightResp');
+
+contentSlider.insertAdjacentElement('afterbegin', sliderFooterLast);
+
+function nextResp() {
+  let sliderFooterfirst = document.querySelectorAll('.service-respFooter')[0];
+  contentSlider.style.marginLeft = '-200%';
+  contentSlider.style.transition = 'all 1s';
+  setTimeout(function(){
+    contentSlider.style.transition = 'none';
+    contentSlider.insertAdjacentElement('beforeend', sliderFooterfirst);
+    contentSlider.style.marginLeft = '-100%';
+  }, 1000);
+}
+
+btnRigthResp.addEventListener('click', function(){
+  nextResp();
 })
 
-setInterval(function(){
-  slide();
-}, intervalo)
-
-function slide(){
-  sliderResp.style.transform = "translate("+(-width*contador)+"px)";
-  sliderResp.style.transition = "all 1s";
-  contador++;
-  if(contador == sliderIndividual.length){
-    setTimeout(function(){
-      sliderResp.style.transform = "translate(0px)";
-      sliderResp.style.transition = "all 0s";
-      contador= 1;
-    }, 1500)
-  }
+function prevResp() {
+  let sliderFooter = document.querySelectorAll('.service-respFooter');
+  let sliderFooterLast =  sliderFooter[sliderFooter.length -1];
+  contentSlider.style.marginLeft = '0';
+  contentSlider.style.transition = 'all 1s';
+  setTimeout(function(){
+    contentSlider.style.transition = 'none';
+    contentSlider.insertAdjacentElement('afterbegin', sliderFooterLast);
+    contentSlider.style.marginLeft = '-100%';
+  }, 1000);
 }
+
+btnRigthResp.addEventListener('click', function(){
+  nextResp();
+})
+
+btnLeftResp.addEventListener('click', function(){
+  prevResp();
+})
+
+setInterval(() => {
+  nextResp();
+}, 6000);
