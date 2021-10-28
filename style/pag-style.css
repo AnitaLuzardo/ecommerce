@@ -1,4 +1,4 @@
-header{
+header {
     background-image: linear-gradient(-225deg, #DFFFCD 0%, #a7f8d0 48%, #9df1d8 100%);
 }
 
@@ -17,13 +17,13 @@ header{
     justify-content: space-around;
 }
 
-.bx-menu{
+.bx-menu {
     color: white;
     font-size: 18px;
     
 }
 
-.bar-menu{
+.bar-menu {
     display: none;
 }
 
@@ -44,14 +44,14 @@ header{
     left: -15px;
 }
 
-.header-search{
+.header-search {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.search-inf{
+.search-inf {
     margin: 20px;
 }
 
@@ -60,7 +60,7 @@ header{
     font-size: 40px;
 }
 
-.input-search{
+.input-search {
     margin: 10px;
 }
 
@@ -79,25 +79,25 @@ header{
     text-indent: 15px;
 }
 
-.menu-nav-resp{
+.menu-nav-resp {
     display: none;
 }
 
-.menu-nav{
+.menu-nav {
     text-align: center;
 }
 
-.menu-nav > ul > li{
+.menu-nav > ul > li {
     display: inline-block;
     padding: 20px;
 }
 
-.menu-nav > ul > li > a{
+.menu-nav > ul > li > a {
     text-decoration: none;
     color: black    ;
 }
 
-.menu-nav > ul > li > a:hover{
+.menu-nav > ul > li > a:hover {
     color: #23ac51;
 }
 
@@ -385,7 +385,7 @@ header{
 }
 
 @media screen and (max-width: 750px) {
-    .header-search{
+    .header-search {
         flex-direction: column;
     }
 
@@ -700,7 +700,6 @@ header{
         font-size: 10px;
         letter-spacing: 0.5px;
     }
-
 
     .container-products {
         margin: 20px;
