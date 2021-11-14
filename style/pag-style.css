@@ -57,7 +57,7 @@ header {
 
 .logo > h1 {
     color: #23ac51;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .input-search {
@@ -327,64 +327,8 @@ header {
     font-size: 30px;
 }
 
-@media screen and (max-width: 1310px) {    
-    .header-search {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .search {
-        width: 250px;
-    }
 
-    .icon {
-        top: 60%;
-    }
-}
-
-@media screen and (max-width: 1240px) {
-    .trending-products {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-} 
-
-@media screen and (max-width: 965px) {
-    .logo > h1 {
-        font-size: 35px;
-    }
-
-    .contenido {
-        left: 110px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .trending > h1 {
-        font-size: 27px;
-    }
-
-    .show-products {
-        font-size: 12px;
-        width: 100px;
-        height: 35px;
-    }
-
-    .service > h1 {
-        font-size: 30px;
-    }
-
-    .service-content > h3 {
-        font-size: 15px;
-    }
-
-    .service-content > p{
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .header-search {
         flex-direction: column;
     }
@@ -508,108 +452,74 @@ header {
     .img-content > img {
         width: 200px;
     }
-}
 
-@media screen and (max-width: 700px) {
-    .contenido {
-        left: 100px;
-    }
-    
-    .contenido > h1 {
+    .service > h1 {
         font-size: 30px;
-        letter-spacing: 5px;
-    }
-    
-    .contenido > p {
-        font-size: 12px;
-        letter-spacing: 1px;
-        line-height: 1.5;
-        color: #ffffff;
     }
 
-    .contenido > button { 
-        font-size: 12px;
-        width: 90px;
-        height: 30px;
+    .service-content > h3 {
+        font-size: 15px;
     }
-} 
 
-@media screen and (max-width: 650px) {
-    .container-social {
-        margin: 10px;
+    .service-content > p{
+        font-size: 10px;
     }
 
     .content-social {
         flex-direction: column;
         text-align: center;
     }
-
-    .social-company > h1 {
-        font-size: 25px;
-        padding: 15px;
-    }
-
-    .social-btn {
-        margin: 20px;
-    }
 }
 
-@media screen and (max-width: 610px) {
-    .trending > h1 {
+@media screen and (max-width: 550px) {
+    .menu-nav-resp >.menu-resp > li > a {
+        font-size: 15px;
+    }
+
+    .contenido {
+        left: 55px;
+        padding: 5px;
+    }
+
+    .contenido > h1{
         font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .contenido > p {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .container-products {
+        margin: 20px;
+    }
+
+    .trending > h1 {
+        font-size: 15px;
     }
 
     .show-products {
         font-size: 10px;
-        width: 85px;
-        height: 30px;
+        width: 80px;
+        height: 25px;
     }
 
-    .products-content {
-        margin: 15px auto;
-    }
 
     .products-content {      
-        width: 150px;
-        padding: 10px;
+        width: 100%;
     }
 
     .img-content > img {
-        width: 150px;
+        width: 100%;
     }
 
     .add-cart {
-        font-size: 11px;
-        width: 130px;
-        height: 20px;
+        font-size: 10px;
+        width: 110px;
+        height: 18px;
     }
 
-    .product > h3 {
-        font-size: 12px;
-    }
-
-    .product-info {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .btn-slider {
-        width: 20px;
-        height: 20px;
-        font-size: 12px;
-    }
-
-    .contenido {
-        left: 65px;
-    }
-
-    .trending {
-        margin: 20px;
-    }
-}
-
-@media screen and (max-width: 550px) {
     .container-footer {
         display: none;
     }
@@ -681,61 +591,8 @@ header {
 
 }
 
-@media screen and (max-width: 500px) {
-    .menu-nav-resp >.menu-resp > li > a {
-        font-size: 15px;
-    }
-
-    .contenido {
-        left: 55px;
-        padding: 5px;
-    }
-
-    .contenido > h1{
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-    
-    .contenido > p {
-        font-size: 10px;
-        letter-spacing: 0.5px;
-    }
-
-    .container-products {
-        margin: 20px;
-    }
-
-    .trending > h1 {
-        font-size: 15px;
-    }
-
-    .show-products {
-        font-size: 10px;
-        width: 80px;
-        height: 25px;
-    }
-
-
-    .products-content {
-        margin: 15px auto;
-    }
-
-    .add-cart {
-        font-size: 10px;
-        width: 110px;
-        height: 18px;
-    }
-}
 
 @media screen and (max-width: 430px) {
-    .products-content {      
-        width: 100%;
-    }
-
-    .img-content > img {
-        width: 100%;
-    }
-
     .trending-products {
         display: flex;
         flex-wrap: wrap;
@@ -751,6 +608,7 @@ header {
         height: 20px;
     }
 }
+
 
 @media screen and (max-width: 400px) {
     .mail-phone {
@@ -821,6 +679,7 @@ header {
         height: 15px;
     }
 }
+
 
 @media screen and (max-width: 350px){
     .menu-nav-resp >.menu-resp > li > a {

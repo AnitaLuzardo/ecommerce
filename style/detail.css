@@ -1,6 +1,27 @@
-.content-details {
-    height: 300px;
+.container-details {
     background-image: url(../style/imag/detalles.jpg);
     background-size: cover;
 }
 
+.product-details {
+    padding: 30px;
+}
+
+.small-img > img {
+    width: 150px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 8px;
+    margin: 15px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.small-img {
+    display: flex;
+    
+
+}
+
+.img-product > img {
+   max-width: 100%; 
+}
