@@ -437,6 +437,12 @@ header {
         color: #ffffff;
     }
 
+    .contenido > button {  
+        font-size: 12px;
+        width: 80px;
+        height: 20px;
+    }
+
     .trending {
         margin: 40px;
     }
@@ -662,7 +668,7 @@ header {
     .contenido > button { 
         font-size: 10px;
         width: 60px;
-        height: 20px;
+        height: 15px;
     }
 
     .trending {
@@ -676,7 +682,7 @@ header {
     .show-products {
         font-size: 6px;
         width: 50px;
-        height: 15px;
+        height: 10px;
     }
 }
 
@@ -704,12 +710,6 @@ header {
         font-size: 7px;
         letter-spacing: 0.1px;
     }
-
-    .contenido > button { 
-        font-size: 8px;
-        width: 45px;
-        height: 20px;
-    }    
 
     .trending > h1 {
         font-size: 11px;
