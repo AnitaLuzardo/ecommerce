@@ -104,6 +104,7 @@ header {
 .container {
     width: 100%;
     overflow: hidden;
+    margin-top: -16px;
 }
 
 .slider-container {
@@ -212,6 +213,7 @@ header {
 
 .container-products {
     margin: 60px;
+    align-items: center;
 }
 
 .trending {
@@ -221,6 +223,7 @@ header {
 
 .trending {
     margin: 80px;
+    align-items: center ;
 }
 
 .trending > h1 {
@@ -282,10 +285,14 @@ header {
 }
 
 .service-footer {
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     color: rgb(78, 77, 77);
     line-height: 1.5;
+}
+
+.service-item {
+    margin: 0;
 }
 
 .service {
@@ -328,7 +335,7 @@ header {
 }
 
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 940px) {
     .header-search {
         flex-direction: column;
     }
@@ -385,6 +392,10 @@ header {
     .menu-nav-resp {
         left: 100%;
         transition: 1s;
+    }
+
+    .menu-resp {
+        padding: 0;
     }
 
     .menu-on {
@@ -452,11 +463,11 @@ header {
     }
 
     .products-content {      
-        width: 200px;
+        width: 235px;
     }
 
     .img-content > img {
-        width: 200px;
+        width: 235px;
     }
 
     .service > h1 {
@@ -475,6 +486,7 @@ header {
         flex-direction: column;
         text-align: center;
     }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -545,8 +557,7 @@ header {
 
     .service-respFooter {
         width: 100%;
-        height: 130px;
-        margin-top: 20px;
+        height: 165px;
     }
 
     .service-respContent {
@@ -595,24 +606,6 @@ header {
         color: white;
     }
 
-}
-
-
-@media screen and (max-width: 430px) {
-    .trending-products {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .trending > h1 {
-        font-size: 15px;
-    }
-
-    .show-products {
-        font-size: 8px;
-        width: 62px;
-        height: 20px;
-    }
 }
 
 
@@ -671,6 +664,17 @@ header {
         height: 15px;
     }
 
+    .trending-products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .show-products {
+        font-size: 8px;
+        width: 62px;
+        height: 20px;
+    }
+
     .trending {
         margin: 0px;
     }
@@ -725,7 +729,6 @@ header {
 
     .service-respFooter { 
         height: 120px;
-        margin-top: 40px;
     }
 
     .service-respContent > h1 > i {

@@ -127,30 +127,6 @@ hr {
     background-color: rgb(108, 255, 248);
 }
 
-@media screen and (max-width:700px){
-    form{
-        width: 290px;
-    }
-
-    .forgot {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width:800px){
-    form{
-        width: 290px;
-    }
-
-    h1{
-        font-size: 35px;
-    }
-
-    .forgot {
-        font-size: 12px;
-    }
-}
-
 @media screen and (max-width:900px){
     form{
         width: 290px;
@@ -159,17 +135,16 @@ hr {
     .forgot {
         font-size: 10px;
     }
-}
 
-@media screen and (max-width:1000px){
-    form{
-        width: 290px;
+    h1{
+        font-size: 35px;
     }
 
     .forgot {
         font-size: 10px;
     }
 }
+
 
 @media screen and (max-width:400px){
     form{
