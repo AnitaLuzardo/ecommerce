@@ -518,7 +518,7 @@ header {
     }
 
     .show-products {
-        font-size: 10px;
+        font-size: 8px;
         width: 80px;
         height: 25px;
     }
@@ -685,7 +685,7 @@ header {
 
     .show-products {
         font-size: 6px;
-        width: 50px;
+        width: 55px;
         height: 10px;
     }
 }
