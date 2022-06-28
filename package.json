@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "Creación básica de un ecommerce con JS, html y css",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnitaLuzardo/ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnitaLuzardo/ecommerce/issues"
+  },
+  "homepage": "https://github.com/AnitaLuzardo/ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
