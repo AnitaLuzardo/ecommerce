@@ -1,5 +1,41 @@
-header {
-    background-image: linear-gradient(-225deg, #DFFFCD 0%, #a7f8d0 48%, #9df1d8 100%);
+.container_user {
+    background-color: #073B4C;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content_user > a {
+    color: #ffffff;
+    text-decoration-line: none;
+}
+
+.container_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_logo {
+    background-color: white;
+    font-family: 'Amatic SC', cursive;
+}
+
+.content_logo > h1 {
+    font-size: 40px;
+}
+
+.seeker {
+    font-family: 'Raleway', sans-serif;
+    text-indent: 10px;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid rgb(162, 160, 160);
+    outline: none;
+    position: relative;
 }
 
 .header-info {
