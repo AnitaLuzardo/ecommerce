@@ -1,47 +1,50 @@
 //========= Comienzo del Primer Slider
-const slider = document.querySelector('#slider-container');
-let sliderSection = document.querySelectorAll('.contenido-slide');
-let sliderSectionLast =  sliderSection[sliderSection.length -1]; 
+//Comienzo del Slider banner
+const slider = document.querySelector('#slider-al');
+let sliderSection = document.querySelectorAll('.contenido-slide-al');
+let sliderSectionLast = sliderSection[sliderSection.length -1];
 
 const btnLeft = document.querySelector('#btnleft');
-const btnRigth = document.querySelector('#btnright');
+const btnRight = document.querySelector('#btnright');
 
 slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
 function next (){
-  let sliderSectionFirst = document.querySelectorAll('.contenido-slide')[0];
-  slider.style.marginLeft = '-200%';
-  slider.style.transition = 'all 1s';
-  setTimeout(() => {
-    slider.style.transition = 'none';
-    slider.insertAdjacentElement('beforeend', sliderSectionFirst);
-    slider.style.marginLeft = '-100%';
-  }, 1000);
+    let sliderSectionFirst = document.querySelectorAll('.contenido-slide-al')[0];
+    slider.style.marginLeft = '-200%';
+    slider.style.transition = 'all 1s';
+    setTimeout(function(){
+        slider.style.transition = 'none';
+        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+        slider.style.marginLeft = '-100%';
+    }, 1000);
 }
 
 function prev (){
-  let sliderSection = document.querySelectorAll('.contenido-slide');
-  let sliderSectionLast =  sliderSection[sliderSection.length -1]; 
-  slider.style.marginLeft = '0';
-  slider.style.transition = 'all 1s';
-  setTimeout(() => {
-    slider.style.transition = 'none';
-    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-    slider.style.marginLeft = '-100%';
-  }, 1000);
+    let sliderSection = document.querySelectorAll('.contenido-slide-al');
+    let sliderSectionLast = sliderSection[sliderSection.length -1];
+    slider.style.marginLeft = '0';
+    slider.style.transition = 'all 1s';
+    setTimeout(function(){
+        slider.style.transition = 'none';
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginLeft = '-100%';
+    }, 1000);
 }
 
-btnRigth.addEventListener('click', function (){
-  next()
+btnRight.addEventListener('click', function(){
+    next();
 });
 
-btnLeft.addEventListener('click', function (){
-  prev()
+btnLeft.addEventListener('click', function(){
+    prev();
 });
 
-setInterval(() => {
-  next();
-}, 6000);
+setInterval(function (){
+    next();
+},6000);
+
+//Finaliza Slider
 //======= Finaliza el primer Slider
 
 //======= Inicio del Segundo Slider

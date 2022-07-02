@@ -1,12 +1,12 @@
 let menu = document.querySelector('#menu');
-let bxMenu = document.querySelector('#bx-menu');
+const btnMenu = document.querySelector('#btnMenu');
 
-bxMenu.addEventListener('click',  () => {
+btnMenu.addEventListener('click',  () => {
   menu.classList.toggle('menu-on');
 })
 
 //Slider descripción de producto
-function myfuntion(smallImag){
-  var fullImag= document.getElementById("imageBox");
-  fullImag.src= smallImag.src;
-}
+// function myfuntion(smallImag){
+//   var fullImag= document.getElementById("imageBox");
+//   fullImag.src= smallImag.src;
+// }
