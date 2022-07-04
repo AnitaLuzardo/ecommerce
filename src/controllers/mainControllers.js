@@ -1,6 +1,6 @@
 const mainControllers = {
     home: (req, res) => {
-        res.render('home')
+        res.render('pages/home')
     }
 };
 

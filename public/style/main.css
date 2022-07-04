@@ -82,6 +82,10 @@ body {
     font-size: 20px;
 }
 
+.bx-search-alt-2 {
+    padding-top: 5px;
+}
+
 .container_car_social {
     display: flex;
     justify-content: center;
@@ -110,14 +114,6 @@ body {
 }
 
 /* ====================================================== */
-
-.header-icon > button:active {
-    transform: translateY(4px);
-}
-
-.trending > button:active {
-    transform: translateY(4px);
-}
 
 @media screen and (min-width: 941px) {
     .container_header{
@@ -172,7 +168,7 @@ body {
         position: absolute;
         top: 39px;
         height: 100%;
-        background-color: #95dac198;
+        background-color: #95dac1dc;
         position: fixed;
         z-index: 1;
     }
