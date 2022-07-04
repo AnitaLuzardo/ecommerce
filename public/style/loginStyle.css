@@ -5,13 +5,17 @@
     align-items: center;
 }
 
+.container-form {
+    margin-bottom: 50px;
+}
+
 .form-login {
     width: 80%;
     text-align: center;
 }
 
 .login {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 35px;
 }
 
@@ -61,5 +65,9 @@
 @media (min-width:600px) and (max-width: 941px) {
     .form-login {
         width: 50%;
+    }
+
+    .container-form {
+        margin-bottom: 50px;
     }
 }

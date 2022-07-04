@@ -1,44 +1,23 @@
 <!DOCTYPE html>
+<%- include('../partials/head'); %>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/loginStyle.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Ecommerce</title>
-</head>
 <body>
-    <form action="" class="form-sign-up">
-        <h1>SIGN UP</h1>
-            <div class="input-div sign-up">
-                <input type="text" class="name"  placeholder="Name">
-            </div>
-            <div class="input-div sign-up">
-                <input type="text" class="last-name" placeholder="Last Name">
-            </div>
-            <div class="input-div sign-up">
-                <input type="text" class="birth" placeholder="DD/MM/YYYY">
-            </div>
-            <div class="input-div sign-up">
-                <input type="text" name="email" class="email" placeholder="Email">
-            </div>
-            <div class="input-div sign-up">
-                <input type="text" name="Confirm email" class="email" placeholder="Confirm email">
-            </div>
-            <div class="input-div sign-up">
-                <input type="password" class="password" placeholder="Password">
-            </div>
-            <div class="input-div sign-up">
-                <input type="password" class="password" placeholder="Confirm Password">
-            </div>
-            <div>
-                <button type="submit" class="registration" id="sing-up">Sign-up</button>
-            </div>
-    </form>
+    <%- include('../partials/header') %>
+    <section class="container-Register">
+        <form id="registerForm" name="registerForm" class="form-register" onsubmit="onRegisterSubmit(event)"> 
+            <h1 class="register">Register</h1> <br>
+            <div id="errors-form"></div>
+            <input class="inf-input" type="name" name="name" placeholder="Nombre"> <br>
+            <input class="inf-input" type="lastName" name="lastName" placeholder="Apellido"> <br>
+            <input class="inf-input" type="email" name="email" placeholder="Email"> <br>
+            <input class="inf-input" type="password" name="pwd" placeholder="Contraseña"> <br>
+            <input class="inf-input" type="password" name = "confirmPwd" placeholder="Confirmar contraseña"> <br>           
+            <div class="content-btn">
+                <button class="btn-register" type="submit">Crear mi cuenta</button> <br>
+                <p class="link">¿Ya tienes una Cuenta? <a href="/login"> Ingresá acá</a></p> 
+            </div>         
+        </form>
+    </section>
+    <%- include('../partials/footer') %> 
 </body>
 </html>

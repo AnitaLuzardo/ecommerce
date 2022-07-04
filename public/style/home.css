@@ -138,6 +138,22 @@
 }
 
 @media screen and (max-width: 940px) {
+    header {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.63);
+    }
+
+    .container_car_social {
+        margin-bottom: 20px;
+    }
+
+    .container-slider-al {
+        margin-top: -20px;
+    }
+
+    footer {
+        border-top: 1px solid rgba(128, 128, 128, 0.63);
+    }
+
     .content-inf {
         display: none;
     }
@@ -151,11 +167,23 @@
     .content-footer {
         display: flex;
         width: 300%;
-        height: 300px;
+    }
+
+    .service-content > h3 {
+        font-size: 15px;
+    }
+
+    .service-content > p {
+        font-size: 13px;
     }
 
     .service-footer {
         width: 100%;
+    }
+
+    .service-item {
+        font-size: 45px;
+        margin-bottom: -25px;
     }
 
     .btn-sliderResp {

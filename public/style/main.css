@@ -43,8 +43,13 @@ body {
     font-family: 'Amatic SC', cursive;
 }
 
-.content_logo > h1 {
+.content_logo > a {
+    text-decoration: none;
+}
+
+.logooo {
     font-size: 40px;
+    color: black;
 }
 
 .bx-cookie {
