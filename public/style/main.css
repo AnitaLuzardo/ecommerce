@@ -48,7 +48,8 @@ body {
 }
 
 .bx-cookie {
-    color: #FD6F96;
+    /* color: #FD6F96; */
+    color: rgba(255, 107, 107, 1)
 }
 
 .search-bar {
@@ -171,7 +172,7 @@ body {
         position: absolute;
         top: 39px;
         height: 100%;
-        background-color: #95DAC1;
+        background-color: #95dac198;
         position: fixed;
         z-index: 1;
     }

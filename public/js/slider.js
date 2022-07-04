@@ -43,8 +43,6 @@ btnLeft.addEventListener('click', function(){
 setInterval(function (){
     next();
 },6000);
-
-//Finaliza Slider
 //======= Finaliza el primer Slider
 
 //======= Inicio del Segundo Slider

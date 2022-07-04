@@ -39,14 +39,14 @@
 }
 
 /* ================================================= */
-.container-footer > ul {
+/* .container-footer > ul {
     display: flex;
 }
 
 .container-footer > ul > li{
     display: inline-block;
     align-content: center; 
-}
+} */
 
 .container-respFooter {
     display: none;
@@ -65,12 +65,145 @@
 
 .service {
     font-size: 40px;
+    color: rgba(255, 107, 107, 1);
 }
 
 @media screen and (min-width: 941px) {
     .container-slider-al {
         margin-top: -16px;
         height: 700px;
+    }
+
+    .container-footer {
+       display: none;
+    }
+
+    .content-inf {
+        display: flex;
+    }
+
+    .content-inf {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .service-inf {
+        text-align: center;
+    }
+    
+    .service-inf {
+        margin: 20px;
+    }
+
+    .btn-sliderResp {
+        display: none;
+    }
+
+    .container_inf_footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-color: #95DAC1;
+        padding-top: 15px;
+    }
+
+    .content-info {
+        margin: 20px;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .redes > li > a {
+        color: black;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .content-inf {
+        display: none;
+    }
+
+    .container-footer {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .content-footer {
+        display: flex;
+        width: 300%;
+        height: 300px;
+    }
+
+    .service-footer {
+        width: 100%;
+    }
+
+    .btn-sliderResp {
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        font-size: 20px;
+        background: none;
+        border: none;
+    }
+
+    .left-arrow {
+        left: 10px;
+    }
+
+    .right-arrow {
+        right: 10px;
+    }
+
+    .container_inf_footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #95DAC1;
+        padding-top: 15px;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .redes > li > a {
+        color: black;
+        font-size: 25px;
     }
 }
 
