@@ -1,41 +1,41 @@
 .container-slider-al {
-    overflow: hidden;
-    position: relative;
+	overflow: hidden;
+	position: relative;
 }
 
 .slider-al {
-    display: flex;
-    width: 400%;
-    height: 100%;
-    margin-left: -100%;
+	display: flex;
+	width: 400%;
+	height: 100%;
+	margin-left: -100%;
 }
 
 .contenido-slide-al{
-    width: 100%;
+  width: 100%;
 }
 
 .slider-img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+	display: block;
+	width: 100%;
+	object-fit: cover;
 }
 
 .btn-slider {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: rgb(10, 10, 10);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: rgb(10, 10, 10);
 }
 
 .btnright {
-    right: 10px;
+  right: 10px;
 }
 
 .btnleft {
-    left: 10px;
+  left: 10px;
 }
 
 /* ================================================= */
@@ -49,189 +49,189 @@
 } */
 
 .container-respFooter {
-    display: none;
+  display: none;
 }
 
 .service-footer {
-    margin: 10px auto;
-    text-align: center;
-    color: black;
-    line-height: 1.5;
+	margin: 10px auto;
+	text-align: center;
+	color: black;
+	line-height: 1.5;
 }
 
 .service-item {
-    margin: 0;
+  margin: 0;
 }
 
 .service {
-    font-size: 40px;
-    color: rgba(255, 107, 107, 1);
+	font-size: 40px;
+	color: rgba(255, 107, 107, 1);
 }
 
 @media screen and (min-width: 941px) {
-    .container-slider-al {
-        margin-top: -16px;
-        height: 700px;
-    }
+	.container-slider-al {
+		margin-top: -16px;
+		height: 700px;
+	}
 
-    .container-footer {
-       display: none;
-    }
+	.container-footer {
+		display: none;
+	}
 
-    .content-inf {
-        display: flex;
-    }
+	.content-inf {
+		display: flex;
+	}
 
-    .content-inf {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-    }
+	.content-inf {
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+	}
 
-    .service-inf {
-        text-align: center;
-    }
+	.service-inf {
+		text-align: center;
+	}
     
-    .service-inf {
-        margin: 20px;
-    }
+	.service-inf {
+		margin: 20px;
+	}
 
-    .btn-sliderResp {
-        display: none;
-    }
+	.btn-sliderResp {
+		display: none;
+	}
 
-    .container_inf_footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        background-color: #95DAC1;
-        padding-top: 15px;
-    }
+	.container_inf_footer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		background-color: #95DAC1;
+		padding-top: 15px;
+	}
 
-    .content-info {
-        margin: 20px;
-    }
+	.content-info {
+		margin: 20px;
+	}
 
-    .about-us {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+	.about-us {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
 
-    .about-us > a {
-        text-decoration: none;
-        color: black;
-    }
+	.about-us > a {
+		text-decoration: none;
+		color: black;
+	}
 
-    .redes {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-    }
+	.redes {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		padding: 0;
+	}
 
-    .redes > li > a {
-        color: black;
-        font-size: 25px;
-    }
+	.redes > li > a {
+		color: black;
+		font-size: 25px;
+	}
 }
 
 @media screen and (max-width: 940px) {
-    header {
-        border-bottom: 1px solid rgba(128, 128, 128, 0.63);
-    }
+	header {
+		border-bottom: 1px solid rgba(128, 128, 128, 0.63);
+	}
 
-    .container_car_social {
-        margin-bottom: 20px;
-    }
+	.container_car_social {
+		margin-bottom: 20px;
+	}
 
-    .container-slider-al {
-        margin-top: -20px;
-    }
+	.container-slider-al {
+		margin-top: -20px;
+	}
 
-    footer {
-        border-top: 1px solid rgba(128, 128, 128, 0.63);
-    }
+	footer {
+		border-top: 1px solid rgba(128, 128, 128, 0.63);
+	}
 
-    .content-inf {
-        display: none;
-    }
+	.content-inf {
+		display: none;
+	}
 
-    .container-footer {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
+	.container-footer {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
 
-    .content-footer {
-        display: flex;
-        width: 300%;
-    }
+	.content-footer {
+		display: flex;
+		width: 300%;
+	}
 
-    .service-content > h3 {
-        font-size: 15px;
-    }
+	.service-content > h3 {
+		font-size: 15px;
+	}
 
-    .service-content > p {
-        font-size: 13px;
-    }
+	.service-content > p {
+		font-size: 13px;
+	}
 
-    .service-footer {
-        width: 100%;
-    }
+	.service-footer {
+		width: 100%;
+	}
 
-    .service-item {
-        font-size: 45px;
-        margin-bottom: -25px;
-    }
+	.service-item {
+		font-size: 45px;
+		margin-bottom: -25px;
+	}
 
-    .btn-sliderResp {
-        position: absolute;
-        top: 50%; 
-        transform: translateY(-50%);
-        font-size: 20px;
-        background: none;
-        border: none;
-    }
+	.btn-sliderResp {
+		position: absolute;
+		top: 50%; 
+		transform: translateY(-50%);
+		font-size: 20px;
+		background: none;
+		border: none;
+	}
 
-    .left-arrow {
-        left: 10px;
-    }
+	.left-arrow {
+		left: 10px;
+	}
 
-    .right-arrow {
-        right: 10px;
-    }
+	.right-arrow {
+		right: 10px;
+	}
 
-    .container_inf_footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #95DAC1;
-        padding-top: 15px;
-    }
+	.container_inf_footer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background-color: #95DAC1;
+		padding-top: 15px;
+	}
 
-    .about-us {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+	.about-us {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
 
-    .about-us > a {
-        text-decoration: none;
-        color: black;
-    }
+	.about-us > a {
+		text-decoration: none;
+		color: black;
+	}
 
-    .redes {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-    }
+	.redes {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		padding: 0;
+	}
 
-    .redes > li > a {
-        color: black;
-        font-size: 25px;
-    }
+	.redes > li > a {
+		color: black;
+		font-size: 25px;
+	}
 }
 

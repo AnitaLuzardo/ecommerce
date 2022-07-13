@@ -1,73 +1,73 @@
 .container-form {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container-form {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .form-login {
-    width: 80%;
-    text-align: center;
+	width: 80%;
+	text-align: center;
 }
 
 .login {
-    font-weight: 200;
-    font-size: 35px;
+	font-weight: 200;
+	font-size: 35px;
 }
 
 .register-link {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .register-link > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn-login {
-    border: none;
-    border-radius: 100px;
-    border: 1px solid rgb(151, 144, 144);
-    background-color: #95dac1;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    width: 100px;
-    height: 25px;
-    cursor: pointer;
+	border: none;
+	border-radius: 100px;
+	border: 1px solid rgb(151, 144, 144);
+	background-color: #95dac1;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	width: 100px;
+	height: 25px;
+	cursor: pointer;
 }
 
 .btn-login:active {
-    transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .inf-input {
-    font-family: 'Montserrat', sans-serif;
-    text-indent: 10px;
-    width: 80%;
-    margin-bottom: 20px;
-    height: 30px;
-    border-radius: 100px;
-    border: 1px solid rgb(162, 160, 160);
-    outline: none;
+	font-family: 'Montserrat', sans-serif;
+	text-indent: 10px;
+	width: 80%;
+	margin-bottom: 20px;
+	height: 30px;
+	border-radius: 100px;
+	border: 1px solid rgb(162, 160, 160);
+	outline: none;
 }
 
 @media (min-width: 942px) {
-    .form-login {
-        width: 35%;
-        text-align: center;
-    }
+	.form-login {
+		width: 35%;
+		text-align: center;
+	}
 }
 
 @media (min-width:600px) and (max-width: 941px) {
-    .form-login {
-        width: 50%;
-    }
+	.form-login {
+		width: 50%;
+	}
 
-    .container-form {
-        margin-bottom: 50px;
-    }
+	.container-form {
+		margin-bottom: 50px;
+	}
 }

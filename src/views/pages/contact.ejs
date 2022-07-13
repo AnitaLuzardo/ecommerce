@@ -2,45 +2,44 @@
 <%- include('../partials/head'); %>
 <html lang="en">
 <body>
-    <%- include('../partials/header') %> 
-    <section class="container_from_contact">   
+	<%- include('../partials/header') %> 
+	<section class="container_from_contact">   
 			<form id= "form-contacto" class="" action="/contacto" method="POST">
 				<h2 class="titulo-form">Déjanos tu Mensaje</h2>
 					<div class=""> 
-							<input class="contact-input" 
-									id="Nombre"
-									type="text" 
-									name = "Nombre" 
-									placeholder="Nombre y Apellido" 
-									value="">
+						<input class="contact-input" 
+							id="Nombre"
+							type="text" 
+							name = "Nombre" 
+							placeholder="Nombre y Apellido" 
+							value="">
 					</div>
 					<div class=""> 
-									<input class="contact-input" 
-									id="Email"
-									type="" 
-									name = "Email" 
-									placeholder="Correo electrónico"
-									value="">
+						<input class="contact-input" 
+						id="Email"
+						type="" 
+						name = "Email" 
+						placeholder="Correo electrónico"
+						value="">
 					</div>
 					<div class=""> 
-							<input class="contact-input" 
-							type="number" 
-							name = "Telefono" 
-							id="Telefono"
-							placeholder="Teléfono (cod. área + número)"
-							value="">     
+						<input class="contact-input" 
+						type="number" 
+						name = "Telefono" 
+						id="Telefono"
+						placeholder="Teléfono (cod. área + número)"
+						value=""> 
 					</div>
 					<div class=""> 
-									<textarea class="text-contact" 
-									
-									type="text" 
-									name="mensaje" 
-									placeholder= "Escriba aquí su mensaje" 
-									id="mensaje" cols="30" rows="10"></textarea>
+						<textarea class="text-contact" 
+						type="text" 
+						name="mensaje" 
+						placeholder= "Escriba aquí su mensaje" 
+						id="mensaje" cols="30" rows="10"></textarea>
 					</div>
 					<button type="submit" id="btn-contact">Enviar Consulta</button> 
 			</form>
-    </section>
-    <%- include('../partials/footer') %> 
+	</section>
+	<%- include('../partials/footer') %> 
 </body>
 </html>
